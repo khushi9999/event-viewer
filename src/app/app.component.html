@@ -1,0 +1,68 @@
+
+<article>
+
+  <section class="selection-section">
+    <!-- <span >
+      No dates selected.
+    </span> -->
+    <!-- <span *ngIf="selected">
+      <h4>Events on {{ selected.date.strftime("%Y-%m-%d") }}</h4>
+      <p *ngIf="selected.events.length <= 0">
+        No events on the day.
+      </p>
+      <ul>
+        <li *ngFor="let event of selected.events">
+          <h5>
+            {{ event.title }}
+          </h5>
+          <p>
+            {{ event.body }}
+          </p>
+        </li>
+      </ul>
+    </span> -->
+
+<div style="
+height: 461px !important;
+overflow: scroll;
+overflow-x: hidden;
+overflow-y: scroll;
+margin-top: 59px;
+line-height:0.9;
+">
+  <div *ngFor="let event of data.events">
+    <!-- <h4>Events on {{ event.start }}</h4> -->
+
+    <div class="w3-half w3-hide-small" style="width:49%;margin-bottom:25px;text-align: center;">
+      <div class="w3-card-4 test" style="width:97%">
+        <header class="w3-container w3-blue">
+          <h1>{{ event.name }}</h1>
+        </header>
+        <div class="w3-container">
+          <br>
+
+          <p>{{ event.start }}</p> &nbsp;to
+          <p>{{ event.end }}</p>
+          <br>
+
+
+        </div>
+
+        <footer class="w3-container w3-blue">
+          <h5>&nbsp;</h5>
+        </footer>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+  
+
+  </section>
+  <section class="demo-section">
+    <infinite-calendar [events]="events" [language]="'enUS'" [monthDateFormat]="'MMM/yyyy'">
+    </infinite-calendar>
+  </section>
+
+</article>

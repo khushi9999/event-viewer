@@ -1,0 +1,50 @@
+/* You can add global styles to this file, and also import other style files */
+
+.link-to-source-code {
+  margin: 2em 0;
+  text-align: right;
+
+  a {
+    padding: .4em 32px;
+
+    &::after {
+      content: ">";
+      padding: 0 .2em;
+    }
+
+    &:link, &:hover, &:visited, &:active {
+      color: #0366d6;
+      text-decoration: none;
+    }
+  }
+}
+
+main {
+
+  @media (max-width: 769px) {
+    section {
+      padding: 0 16px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    article {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    .demo-section {
+      box-sizing: border-box;
+      padding: 0 32px;
+      width: 60%;
+    }
+
+    .selection-section {
+      box-sizing: border-box;
+      padding: 0 32px;
+      width: 40%;
+    }
+  }
+
+}
