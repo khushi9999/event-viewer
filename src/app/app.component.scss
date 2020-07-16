@@ -1,3 +1,28 @@
 .first-day {
     color: #080808 !important;
 }
+
+.a{
+    display: inline-block;
+    margin-left: 14px;
+    cursor: pointer;
+}
+
+.crd{
+    width:49%;margin-bottom:25px;text-align: center;
+}
+
+.content{
+    min-height: 110px;
+}
+
+.active-parent-event{
+    background-color: rgb(3, 155, 229);
+     border: 2px solid white;
+      border-radius: 10px;
+       box-sizing: initial
+}
+
+.active-child-event{
+    color:white;
+}
